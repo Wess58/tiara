@@ -17,7 +17,7 @@
 
     <!-- 1st NAV SECTION -->
 
-    <nav class="navbar navbar-expand-lg navbar-light mx-5 nav1">
+    <nav class="navbar navbar-expand-lg mx-5 nav1">
       <a class="navbar-brand" href="#">Tiara</a>
       <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -43,7 +43,10 @@
         <ul class="navbar-nav mr-5">
           <li class="nav-item mx-2">
             <div class="drpdown">
-              <button class="btn drpbtn">Products
+              <button class="btn drpbtn">
+                <span>
+                  <i class="fas fa-th"></i>
+                </span>
                 <!-- <i class="fa fa-caret-down"></i> -->
               </button>
               <div class="drpdown-content">
@@ -53,15 +56,27 @@
               </div>
             </div>
           </li>
-          <li class="nav-item active mx-2">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="#">Link</a>
+          <!-- <li class="nav-item active mx-3">
+            <a class="nav-link" href="#">
+              <span>
+                <i class="fas fa-th"></i>
+              </span>
+            </a>
+          </li> -->
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">
+              <span>
+                <i class="far fa-question-circle"></i>
+              </span>
+            </a>
           </li>
 
-          <li class="nav-item mr-5">
-            <a class="nav-link disabled" href="#">Disabled</a>
+          <li class="nav-item ml-3 mr-5">
+            <a class="nav-link" href="#">
+              <span>
+                <i class="fas fa-cog"></i>
+              </span>
+            </a>
           </li>
         </ul>
       </div>
@@ -78,6 +93,10 @@
 
       <div class="row">
         <div class="col-md-7">
+
+          <img id="dark_blue" src="images/dark_blue.svg" alt="">
+          <img id="light_blue" src="images/light_blue.svg" alt="">
+          <img id="orange" src="images/orange.svg" alt="">
 
           <h1 class="mb-5">Providing Complex Communication Capabilities in the Easiest Way</h1>
 
@@ -96,7 +115,49 @@
 
 
   <!-- PRODUCTS SECTION -->
-  <div class="">
+  <div class="container products">
+    <div class="row">
+      <div class="col-md-4">
+        <h3 class="mb-4">Products</h3>
+
+        <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s .</p>
+
+      </div>
+      <div class="col-md-8">
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h4 class="mb-3">SMS</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+              <a href="#">learn more</a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h4 class="mb-3">Airtime</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+              <a href="#">learn more</a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h4 class="mb-3">USSD</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+              <a href="#">learn more</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
 
   </div>
 
