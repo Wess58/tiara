@@ -167,3 +167,30 @@ main .landingSection #orange {
   color: #73CED4;
   font-weight: 600;
 }
+/* ******************************************* *?/
+USECASE SECTION
+/* ******************************************* */
+.usecase{
+  min-height: 70vh;
+}
+
+.usecase h3{
+  color: #80868b ;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+}
+.usecase .card {
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0.09);
+}
+.usecase h4{
+  color: #6ba832;
+  text-align: center;
+  font-weight: 600;
+}
+.usecase .card p{
+  color: #80868b;
+  letter-spacing: 0.5px;
+}
