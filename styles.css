@@ -72,7 +72,7 @@ body {
 /* LANDING SECTION */
 /* ******************************************** */
 main {
-  margin-top: 5%;
+  margin-top: 10%;
   min-height: 80vh;
   /* background-color: #000; */
 }
@@ -95,6 +95,7 @@ main .landingSection .getStartedBtn {
   background-color: #152149;
   width: 200px;
   color: #fff;
+  font-weight: 600;
   border-radius: 50px;
 }
 
@@ -158,6 +159,7 @@ main .landingSection #orange {
 .products .card p {
   color: #80868b;
   letter-spacing: 0.5px;
+  
 }
 
 .products .card a{
