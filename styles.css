@@ -242,6 +242,7 @@ USECASE SECTION
 
 .usecase .card p {
   color: #80868b;
+  font-size: 14px;
   letter-spacing: 0.5px;
 }
 
