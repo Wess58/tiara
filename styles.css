@@ -34,6 +34,7 @@ body {
   position: absolute;
   top: 60px;
   transition: all .3s ease;
+  visibility: hidden;
   opacity: 0;
   background-color: #0009;
   border-radius: 2px;
@@ -53,9 +54,9 @@ body {
   font-size: 20px;
   font-weight: 600;
 }
-.nav2 a:hover {
+/* .nav2 a:hover {
   color: #fff9 !important;
-}
+} */
 
 .nav2 .drpbtn {
   color: #fff !important;
@@ -186,8 +187,7 @@ main .landingSection #orange {
 .products .card p {
   color: #80868b;
   letter-spacing: 0.5px;
-  text-decoration: none;
-  font-weight: 600;
+
 }
 
 .products .card a {
