@@ -9,6 +9,9 @@ body {
 .nav1 {
   background-color: #fff;
 }
+.nav1 #sidebarCollapse{
+  font-size: 30px;
+}
 
 .nav1 .navbar-brand {
   font-weight: 600;
@@ -20,15 +23,45 @@ body {
   background-color: #152149;
   width: 100px;
   color: #fff;
+  font-weight: 600;
   border-radius: 50px;
 }
 
 .nav2 {
+  /* margin-top: 56px; */
+  padding: 5px;
   background-color: #152149;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-.nav2 a,
+.nav2 .toolTip {
+  position: absolute;
+  top: 60px;
+  transition: all .3s ease;
+  visibility: hidden;
+  opacity: 0;
+  background-color: #0009;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  padding: 3px 10px 3px 10px;
+}
+
+.nav2 .nav-item:hover .toolTip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nav2 a {
+  color: #fff !important;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* .nav2 a:hover {
+  color: #fff9 !important;
+} */
 .nav2 .drpbtn {
   color: #fff !important;
   font-size: 20px;
@@ -49,23 +82,26 @@ body {
 
 .drpdown-content a {
   float: none;
-  color: black !important;
   padding: 7px 16px;
   text-decoration: none;
   color: #5f6368 !important;
   font-size: 14px !important;
   display: block;
   text-align: center;
-  transition: all .3s ease;
+  transition: all 3s;
 }
 
 .drpdown-content a:hover {
   background-color: #f1f3f4;
+  color: #5f6368 !important;
 }
 
 .drpdown:hover .drpdown-content {
   display: block;
   transition: all .3s ease;
+}
+#sidebarCollapse2{
+  font-size: 20px;
 }
 
 /* ******************************************** */
@@ -76,8 +112,6 @@ main {
   min-height: 80vh;
   /* background-color: #000; */
 }
-
-main .landingSection {}
 
 main .landingSection h1 {
   color: #3c4043;
@@ -130,23 +164,24 @@ main .landingSection #orange {
 /* PRODUCTS SECTION */
 /* ******************************************** */
 .products {
-  min-height: 70vh;
+  min-height: 60vh;
 }
 
-.products h3 {
-  color: #F8A13B;
+.products h2 {
+  color: #80868b;
   font-weight: 600;
-  font-size: 30px;
 }
 
-.products h3+p {
+.products h2+p {
   color: #80868b;
   letter-spacing: 1px;
 }
 
 .products .card {
   border: none;
+  margin-bottom: 20px;
   border-radius: 25px;
+  min-height: 300px;
   box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0.09);
 }
 
@@ -158,12 +193,86 @@ main .landingSection #orange {
 
 .products .card p {
   color: #80868b;
+  font-size: 14px;
   letter-spacing: 0.5px;
-  
 }
 
-.products .card a{
+.products .card a {
   text-decoration: none;
-  color: #73CED4;
+  color: #dadce0;
   font-weight: 600;
+  transition: all .3s;
+}
+
+.products .card:hover a {
+  color: #9aa0a6;
+}
+
+.products .card:hover a::after {
+  content: '→';
+  margin-left: 10px;
+}
+
+/* ******************************************* *?/
+USECASE SECTION
+/* ******************************************* */
+.usecase {
+  min-height: 70vh;
+}
+
+.usecase h3 {
+  color: #80868b;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+}
+
+.usecase .card {
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0.09);
+}
+
+.usecase h4 {
+  color: #6ba832;
+  text-align: center;
+  font-weight: 600;
+}
+
+.usecase .card p {
+  color: #80868b;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+/* ******************************************* *?/
+  MEDIA QUERIES SECTION
+/* ******************************************* */
+@media (max-width: 768px) {
+
+  main {
+    margin-top: 20%;
+    min-height: 80vh;
+    /* background-color: #000; */
+  }
+  main .landingSection #dark_blue,
+  main .landingSection #light_blue,
+  main .landingSection #orange {
+    display: none;
+  }
+
+  main .landingSection h1 {
+    color: #3c4043;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .nav1 {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+  .products .card {
+    min-height: 200px;
+  }
 }
