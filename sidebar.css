@@ -25,7 +25,6 @@
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   } */
-
   .line {
     width: 100%;
     height: 1px;
@@ -59,7 +58,7 @@
 
   #sidebar .sidebar-header {
     padding: 10px;
-    background: transparent!important;
+    background: transparent !important;
   }
 
   #sidebar ul.components {
@@ -108,15 +107,13 @@
   }
 
   ul.CTAs {
-    padding: 20px;
+    padding: 10px;
   }
 
-  ul.CTAs a {
-    text-align: center;
-    font-size: 0.9em !important;
+  ul.CTAs li {
+    font-size: 1em !important;
     display: block;
-    border-radius: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   a.download {
